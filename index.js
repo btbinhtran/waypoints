@@ -47,7 +47,7 @@ Waypoints.prototype.start = function() {
  */
 Waypoints.prototype._onScroll = function() {
   var scrollPoint = window.scrollY || window.pageYOffset;
-  var wHeight = window.innerHeight / 2;
+  var wHeight = window.innerHeight / 3;
   var self = this;
   var newPoints = [];
 
