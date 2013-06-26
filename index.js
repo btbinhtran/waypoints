@@ -52,7 +52,7 @@ Waypoints.prototype._onScroll = function() {
   var newPoints = [];
 
   this.each(function(point){
-    if( (scrollPoint + wHeight) === point.y ) {
+    if( (scrollPoint + wHeight) <= point.y ) {
       self.fire(point);
     }
     else {
