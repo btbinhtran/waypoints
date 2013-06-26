@@ -46,14 +46,13 @@ Waypoints.prototype.start = function() {
  * from the elment
  */
 Waypoints.prototype._onScroll = function() {
-  console.log('scrolling');
   var scrollPoint = window.scrollY || window.pageYOffset;
   var wHeight = window.innerHeight / 3;
   var self = this;
   var newPoints = [];
 
   this.each(function(point){
-    if( (scrollPoint) === point.y ) {
+    if( (scrollPoint + wHeight) === point.y ) {
       self.fire(point);
     }
     else {
